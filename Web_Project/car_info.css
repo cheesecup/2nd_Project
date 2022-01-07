@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.nav_menu {
+    background-color: #dc232d;
+    
+}
+
+.cen {
+    text-align: center;
+    margin-right: 5%;
+    
+}
+
+.menu {
+    display: inline-block;
+}
+
+
+.menu_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: max-content;  
+}
+
+.menu_list_item {
+    float: left;
+    width: max-content;
+}
+
+.menu_list_item > a, .menu_list_item > span {
+    display: block;
+    color: white;
+    padding: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #dc232d;
+    min-width: 130px;
+    padding: 8px;
+    text-align: left;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    /* border: 3px solid black; */
+    border-radius: 5px;
+}
+
+.dropdown-contents > a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+footer {
+    color: #6e6969dc;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.foot_cen {
+    text-align: center;
+}
+
+.foot_menu {
+    display: inline-block;
+}
+
+.foot_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: max-content;  
+}
+
+.foot_list_item {
+    float: left;
+}
+
+.foot_list_item a{
+    display: block;
+    color: #6e6969dc;
+    margin-left: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer_text {
+    display: inline-block;
+    width: max-content;
+}
+
+/* ------------------------------header & footer------------------------------------ */
+
+.top_info {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.ad {
+    margin-right: 30px;
+}
+
+.name {
+    width: 700px;
+    line-height: 50px;
+}
+.name h1 {
+    font-size: 25pt;
+}
+#sub_name {
+    word-spacing: 20px;
+}
+
+.price {
+    width: 200px;
+    height: 120px;
+    line-height: 25px;
+    font-size: 15pt;
+    font-weight: bold;
+    text-align: right;
+    padding-left: 80px;
+    padding-right: 120px;
+  
+}
+.price a {
+    background-color: #dc232d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: normal;
+}
+/* ----------------------------------------------- */
+
+.slider {
+    margin-top: 50px;
+}
+.slider input[id*="slide"] {
+    display: none;
+}
+.slider .slidewrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+.slider .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+.slider .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.slider .slidelist > li > a img {
+    width: 100%;
+}
+.slider .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.slider .slidelist .left {
+    left: 5px;
+    background: url('./image/왼쪽화살표.png') center center / 100% no-repeat;
+}
+.slider .slidelist .right {
+    right: 5px;
+    background: url('./image/오른쪽화살표.png') center center / 100% no-repeat;
+}
+
+.slider [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+.slider [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+.slider [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+.slider [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-300%);}
+.slider [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-400%);}
+
+.slider .slide-control [class*="control"] {display: none;}
+.slider [id="slide01"]:checked ~ .slidewrap .control01 {display: block;}
+.slider [id="slide02"]:checked ~ .slidewrap .control02 {display: block;}
+.slider [id="slide03"]:checked ~ .slidewrap .control03 {display: block;}
+.slider [id="slide04"]:checked ~ .slidewrap .control04 {display: block;}
+.slider [id="slide05"]:checked ~ .slidewrap .control05 {display: block;}
+
+/* ----------------------------------------------- */
+
+.car_certi {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.all-certi {
+    width: 900px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #c5bebedc;
+    line-height: 50px;
+    font-weight: 300 ;
+    
+}
+.a-certi {
+    font-size: 13pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 50px;
+    border-right: 1px solid #c5bebedc;
+}
+.b-certi {
+    font-size: 13pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.s-certi {
+    font-size: 13pt;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    border-left: 1px solid #c5bebedc;
+}
+
+/* ----------------------------------------------- */
+
+.basic_info {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.basic {
+    width: 900px;
+}
+
+h2 {
+    padding: 20px;
+    font-weight: normal;
+  
+}
+
+#t-basic {
+    width: 900px;
+    height: 300px;
+    text-align: center;
+    font-weight: 300;
+}
+#t-basic td {
+    width: 100px;
+}
+
+/* ----------------------------------------------- */
+
+.major_opt {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.major {
+    width: 900px;
+}
+
+#t-major td {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* ----------------------------------------------- */
+
+.all_opt {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.all {
+    width: 900px;
+}
+.all-content {
+    width: 700px;
+    padding-left: 50px;
+    font-weight: 300;  
+}
+
+h3 {
+    font-weight: 100 bold;
+}
+
+#t-all {
+    width: 800px;
+
+}
+#t-all td {
+    width: 100px;
+    height: 35px;
+}
+
+/* ----------------------------------------------- */
+
+.car_intro {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.intro {
+    width: 900px;
+}
+.intro-content {
+    width: 700px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    margin-left: 100px;
+    background-color: rgb(224, 224, 224);
+    
+}

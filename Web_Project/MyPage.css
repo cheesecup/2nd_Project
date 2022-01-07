@@ -98,7 +98,6 @@ body {
 }
 
 .my_lists {
-    /* background-color: aqua; */
     float: right;
     display: table;
 }
@@ -130,7 +129,6 @@ body {
 }
 
 .info_list {
-    /* border: 1px solid black; */
     width: 1260px;
     height: 55px;
     border-collapse: collapse;   
@@ -151,6 +149,43 @@ body {
     min-height: 400px;
     width: 1260px;
     border: 2px solid #cccccc;
+}
+
+.purinfo {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.purinfo td {
+    border: 1px solid rgb(172, 172, 172);
+}
+
+.purinfo_title {
+    background-color: #cccccc;
+}
+
+.purinfo_title td {
+    font-size: 20px;
+}
+
+.order a {
+    text-decoration: none;
+    color: black;
+}
+
+#refund_btn, #inquire_btn, #review_btn {
+    width: 100px;
+    height: 35px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(230, 22, 22);;
+    border-radius: 5px;
+    outline: none;
+    background: white;
+    color: rgb(230, 22, 22);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
 }
 
 #question_btn {
@@ -189,6 +224,10 @@ body {
     color: #6e6969dc;
     font-size: 15px;
     font-weight: bold;
+}
+
+#modify_email,#modify_emailadd {
+    width: 138px;
 }
 
 .modify_table td {

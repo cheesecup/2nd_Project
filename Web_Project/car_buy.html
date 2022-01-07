@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차량구매</title>
+    
+    <link rel="stylesheet" href="./car_buy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div style="text-align: center;" id="logo">
+            <a href="main_login.html"><img src="image/로그인 로고(100x100).png" width="120px" height="120px"> </a>
+        </div>
+
+        <nav class="nav_menu">
+            <div class="cen">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list_item"><a href="#">내차팔기</a></li>
+                        <li class="menu_list_item"><a href="board.html" style="text-decoration: underline;">내차사기</a></li>
+                        <li class="menu_list_item"><a href="#">금융</a></li>
+                        <li class="menu_list_item"><a href="#">렌트</a></li>
+                        <li class="menu_list_item"><a href="#">위클리특가</a></li>
+                        <li class="menu_list_item"><a href="board.html">게시판</a></li>
+                        <li class="menu_list_item"><span class="dropdown">내계정
+                            <div class="dropdown-contents">
+                                <a href="main.html">로그아웃</a>
+                                <br>
+                                <a href="MyPage.html">마이페이지</a>
+                            </div>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+<!--------------------------------------------------header------------------------------------------------------->
+    
+<main>
+
+<form  name="pay_check" action="#" method="post">
+    <section class="nominee">
+        <div class="nominee-content1">
+            <div class="nomi-con1">
+              <div class="nomi-con1-1">
+                <h1>명의자 정보를 입력해주세요</h1>
+                <p id="agree-c"><input type="checkbox" name="agree" id="agree"> 차량 계약 및 배송을 위해 회원정보를 사용하겠습니다. </p>
+              </div>
+            </div>
+            <div class="nomi-con2">
+              <div class="nomi-con2-1">
+                <p>
+                    <label>명의자</label><br>  <!-- label과 nput을 연결시킬 때는 input의 아이디명을 적으면 됨-->
+                    <input type="text" name="name_n" id="name_n" placeholder=" &nbsp;명의자">
+                </p>
+                <p>
+                    <label>휴대폰 번호</label><br>
+                    <input type="text" name="mobile_n" id="mobile_n" placeholder=" &nbsp; - 제외하고 입력해주세요" maxlength="11">
+                   
+                </p>
+                <p>
+                    <input type="button" name="self-btn" id="self-btn" value="본인인증">
+                </p>
+              </div>
+            </div>
+            <div class="nomi-ex">
+                <p id="n-ex">※ 다른 사람 명의로 계약을 원하시면 휴대폰인증 버튼을 눌러 명의자 변경 후 진행해 주세요</p>
+            </div>
+        </div> <!-- //nominee-content1  end -->
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="nominee-content2">
+            <div class="nomi-con3">
+                <p>
+                    <label>주민번호</label><br>
+                    <input type="text" name="jb_num1" id="jb_num1" placeholder=" &nbsp;앞번호 6자리" minlength="6" maxlength="6"> 
+                    - <input type="password" name="jb_num2" id="jb_num2" placeholder=" &nbsp;뒷번호 7자리" minlength="7" maxlength="7">
+                </p>
+                <p>
+                    <label>주소지(주민등록상)</label><br>
+                    <input type="text" name="address1" id="address1" placeholder=" &nbsp;우편번호">
+                    <input type="button" name="address-btn1" id="address-btn1" value="우편번호찾기"><br><br>
+                    <input type="text" name="address2" id="address2" placeholder=" &nbsp;기본주소"><br><br>
+                    <input type="text" name="address3" id="address3" placeholder=" &nbsp;상세주소를 입력하세요"><br>
+                 <p id="add1-ex">※ 주소 정보가 잘못되었을 시 다시 입력하여 주세요</p>
+                </p>
+                <p>
+                    <label>이메일</label><br>
+                    <input type="text" name="email1" id="email1" placeholder=" &nbsp;이메일주소">
+                    @ <input type="text" name="email2" id="email2" placeholder=" &nbsp;도메인입력">
+                </p>
+            </div>
+        </div> <!-- nominee-content2  end -->
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section class="delivery">
+      <div class="delivery-content">
+        <h2>차량을 어디로 배송해 드릴까요?</h2>
+        <p>
+            <label>차량 배송지 주소가 명의자 정보와 동일한가요?</label><br>
+            <input type="button" name="same-btn" id="same-btn" onclick="sameinfofn()" value="동일합니다">
+            <input type="button" name="diff-btn" id="diff-btn" value="다릅니다">
+        </p>
+        <p>
+            <label>받는 분</label><br>
+            <input type="text" name="name_d" id="name_d" placeholder=" &nbsp;이름"> 
+        </p>
+        <p>
+            <label>휴대폰 번호</label><br>
+            <input type="text" name="mobile_d" id="mobile_d" placeholder=" &nbsp;- 제외하고 입력해주세요" maxlength="11"> 
+        </p>
+        <p>
+            <label>배송지 주소</label><br>
+            <input type="text" name="address4" id="address4" placeholder=" &nbsp;우편번호">
+            <input type="button" name="address-btn2" id="address-btn2" value="우편번호찾기"><br><br>
+            <input type="text" name="address5" id="address5" placeholder=" &nbsp;기본주소"><br><br>
+            <input type="text" name="address6" id="address6" placeholder=" &nbsp;상세주소를 입력하세요"><br>
+            <p id="add2-ex">※ 배송 거리에 따라 배송비가 산출되며, 정확한 배송비는 밑에서 확인 가능합니다.</p>
+        </p>
+        <p>
+            <label>희망 배송일</label><br>
+            <input type="date" name="hope-date" id="hope-date">
+            <p id="hope-ex">※ 희망 배송일을 정하지 않으면 일주일 후에 배송됩니다.</p>
+        </p>
+      </div>
+    </section> <!-- delivery  end -->
+
+    <br>
+    <hr>
+    <br>
+
+    <section class="pay">
+        <div class="pay-content">
+          <h2>고객님 어떻게 결제 하시겠어요?</h2>
+            <p>
+            <label>결제방식을 선택하여 주세요(복수 선택 가능합니다)</label><br>
+            <input type="button" name="cash-btn" id="cash-btn" value="현금">
+            <input type="button" name="month-btn" id="month-btn" value="할부">
+            <input type="button" name="card-btn" id="card-btn" value="카드">
+            </p>
+            <p>매각하실 차량이 있으신가요? <input type="checkbox" id="yes1"> 예 </p>
+            <p>리스로 구매하시겠어요? <input type="checkbox" id="yes2"> 예 </p>
+            <p id="pay-ex">※ 리스 선택 시에는 "상담 후 결제"만 가능합니다.</p>
+            <input type="submit" name="direct_pay" id="direct_pay" value="즉시 결제" onclick="pay_complete()">
+            <input type="submit" name="talk_pay" id="talk_pay" value="상담 후 결제" onclick="talk_complete()">
+        </div>
+    </section>
+</form>
+
+</main>
+
+<!--------------------------------------------------footer------------------------------------------------------->
+<footer style="text-align: center;">
+    <hr>
+    <nav class="foot">
+        <div class="foot_cen">
+            <div class="foot_menu">
+                <ul class="foot_list">
+                    <li class="foot_list_item"><a href="#">회사소개</a></li>
+                    <li class="foot_list_item"><a href="#">IR정보</a></li>
+                    <li class="foot_list_item"><a href="#">보증서비스</a></li>
+                    <li class="foot_list_item"><a href="#">인재채용</a></li>
+                    <li class="foot_list_item"><a href="#">이용약관</a></li>
+                    <li class="foot_list_item"><a href="#">개인정보처리방침</a></li>
+                    <li class="foot_list_item"><a href="#">고객지원</a></li>
+                    <li class="foot_list_item"><a href="#">윤리강령</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr><br>
+        <div class="footer_text">
+            상호명: 올바른중고차 주식회사<br>
+            대표자: 김대용 | 개인정보관리책임자: 관리장<br>
+            사업자등록번호: 156-87-00729 | 통신판매업신고: 제 2021-서울강남-0562호 | 사업장 소재지: 서울특별시 강남구<br>
+            내차사기 홈서비스: 1588-5577(1) | 일반문의: 1588-5577(4) | 사업제휴문의: kdy8252@naver.com<br>
+            Copyright © 올바른중고차 주식회사 All Rights Reserved<br>
+            &nbsp;
+        </div>
+</footer>
+
+<script type="text/javascript" src="./car_buy.js"></script>
+
+</body>
+</html>

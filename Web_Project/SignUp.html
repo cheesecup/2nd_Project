@@ -15,7 +15,7 @@
 <body>
     <header>
         <div style="text-align: center;" id="logo">
-            <a href="Header_Footer.html"><img src="image/로그인 로고(100x100).png" width="120px" height="120px"> </a>
+            <a href="main.html"><img src="image/로그인 로고(100x100).png" width="120px" height="120px"> </a>
         </div>
 
         <nav class="nav_menu">
@@ -23,16 +23,16 @@
                 <div class="menu">
                     <ul class="menu_list">
                         <li class="menu_list_item"><a href="#">내차팔기</a></li>
-                        <li class="menu_list_item"><a href="#">내차사기</a></li>
+                        <li class="menu_list_item"><a href="search.html">내차사기</a></li>
                         <li class="menu_list_item"><a href="#">금융</a></li>
                         <li class="menu_list_item"><a href="#">렌트</a></li>
                         <li class="menu_list_item"><a href="#">위클리특가</a></li>
-                        <li class="menu_list_item"><a href="#">게시판</a></li>
-                        <li class="menu_list_item"><span class="dropdown">내계정
+                        <li class="menu_list_item"><a href="board.html">게시판</a></li>
+                        <li class="menu_list_item"><span class="dropdown" style="text-decoration: underline;">내계정
                             <div class="dropdown-contents">
-                                <a href="#">로그인</a>
+                                <a href="login.html">로그인</a>
                                 <br>
-                                <a href="SignUp.html">회원가입</a>
+                                <a href="SignUp.html" style="text-decoration: underline;">회원가입</a>
                             </div>
                         </span>
                         </li>
@@ -44,7 +44,7 @@
 
     <div style="text-align: center;">
         <div class="title">
-            <h1> 회원가입 </h1>
+            <h1 id="signtest" onclick="testfn()"> 회원가입 </h1>
             <p>회원가입을 위해 개인정보를 입력해주세요</p>
         </div>
     </div>
@@ -137,9 +137,7 @@
                         </td>
                         <td>
                             <label for="input_phone1"> 휴대폰번호 </label><br>
-                            <input onkeyup="auto_hyphen(this)" type="text" name="input_phone" id="input_phone">
-                            <br>
-                            <label> * (-)생략 </label>
+                            <input type="text" name="input_phone" id="input_phone" onkeyup="auto_hyphen(this)">
                         </td>
                     </tr>
                     <tr>

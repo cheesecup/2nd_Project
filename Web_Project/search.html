@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 내차사기 - All바른 중고차</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--헤더-->
+    <header>
+        <div style="text-align: center;" id="logo">
+            <a href="main_login.html"><img src="image/로그인 로고(100x100).png" width="120px" height="120px"> </a>
+        </div>
+
+        <nav class="nav_menu">
+            <div class="cen">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list_item"><a href="#">내차팔기</a></li>
+                        <li class="menu_list_item"><a href="search.html" style="text-decoration: underline;">내차사기</a></li>
+                        <li class="menu_list_item"><a href="#">금융</a></li>
+                        <li class="menu_list_item"><a href="#">렌트</a></li>
+                        <li class="menu_list_item"><a href="#">위클리특가</a></li>
+                        <li class="menu_list_item"><a href="board.html">게시판</a></li>
+                        <li class="menu_list_item"><span class="dropdown">내계정
+                            <div class="dropdown-contents">
+                                <a href="main.html">로그아웃</a>
+                                <br>
+                                <a href="MyPage.html">마이페이지</a>
+                            </div>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--광고배너-->
+    <div class="adbanner" style="text-align: center; padding-top: 15px;">
+        <a href="#"> <img src="image/광고배너(1260x84).png" width="1260px" height="120px"> </a>
+    </div>
+    <br>
+    <!--검색창-->
+    <div>
+        <div class="searchZone" style="text-align: center;">
+            <input id = "model_name" type="text" placeholder="모델명 입력">
+            <button id = "search_btn" type="submit">검색</button>
+        </div>
+    </div>
+    <br>
+    <!--옵션 선택 창-->
+    <section class="car_opt">
+        <div class="options" >
+            <table id="c_opt" w width = "1260"idth=1260 align="center">
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;구분</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">국산</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">수입</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;차종</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">경차</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">소형차</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">준중형차</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">중형차</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">대형차</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;제조사/모델</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">현대</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">제네시스</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">기아</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">쉐보레(GM대우)</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">르노삼성</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;연식</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">2022년</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">2021년</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">2020년</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">2019년</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">2018년</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;주행거리</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">0~10000km</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">10000~20000km</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">20000~30000km</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">30000~40000km</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">40000~50000km</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;연료</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">가솔린</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">디젤</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">LPG</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">전기</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">가솔린+전기</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;변속기</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">오토</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">수동</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">세미오토</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">CVT</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;옵션</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">내비게이션</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">선루프</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">가죽시트</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">열선시트:운전석</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">스마트키</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;사고유무</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">무사고</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">단순교환</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">단순사고(접촉)</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">사고</a></li></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#CCCCCC">&nbsp;&nbsp;인승</td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">4인승</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">5인승</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">7인승</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">9인승</a></li></td>
+                    <td><input type="checkbox" name="checkbox" value="checkbox"><a href="#">11인승</a></li></td>
+                    <td align="right"><a href="#">더보기+</a></li></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <br>
+    <!--차량목록-->
+    <hr style="width: 70%;">
+    <section class="car_menu" align="center">
+        <div class="menu">
+            <table id="c_menu1" width = "1260" style="text-align: left;">
+                <tr>
+                    <td rowspan=6 width = "220"> <a href="car_info.html"><img src="./image/볼보.PNG"></a> </td>
+                    <td><img src="./image/1인소유.PNG"> <img src="./image/보험이력없음.PNG"></td>
+                    <td><img src="./image/직영.PNG"> <img src="./image/홈서비스.PNG"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 25px; font-weight:bold;" width = "900">볼보 XC60 2세대 T6 인스크립션</td>
+                    <td style="font-size: 25px; font-weight:bold; color:#DA2432">5,940만원</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#888888;">18년3월식&nbsp;&nbsp;&nbsp;&nbsp;36,698km&nbsp;&nbsp;&nbsp;&nbsp;가솔린&nbsp;&nbsp;&nbsp;&nbsp;오토&nbsp;&nbsp;&nbsp;&nbsp;무사고</td>
+                    <td>할부 월 126만원</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#988771">○무사고/1인신조/보험이력X ★ 희귀한 왜건 / 가죽 시트 시공</td>
+                </tr>
+            </table>
+            <table id="c_menu2" width = "1260" style="text-align: left;">
+                <tr>
+                    <td rowspan=6 width = "220"> <img src="./image/g70.PNG"> </td>
+                    <td><img src="./image/1인소유.PNG"> <img src="./image/특옵션.PNG"></td>
+                    <td><img src="./image/직영.PNG"> <img src="./image/홈서비스.PNG"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 25px; font-weight:bold;" width = "900">g70 3.3 가솔린 터보 스포츠 엘리트</td>
+                    <td style="font-size: 25px; font-weight:bold; color:#DA2432">2,715만원</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#888888;">19년3월식&nbsp;&nbsp;&nbsp;&nbsp;40,741km&nbsp;&nbsp;&nbsp;&nbsp;가솔린&nbsp;&nbsp;&nbsp;&nbsp;오토&nbsp;&nbsp;&nbsp;&nbsp;단순사고(접촉)</td>
+                    <td>할부 월 56만원</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#988771">#HTRAC!! #제네시스 액티브 세이프티2!! #와이드 썬루프!! #추천</td>
+                </tr>
+            </table>
+            <table id="c_menu3" width = "1260" style="text-align: left;">
+                <tr>
+                    <td rowspan=6 width = "220"> <img src="./image/펠리세이드.PNG"> </td>
+                    <td><img src="./image/특옵션.PNG"> <img src="./image/짧은km.PNG"></td>
+                    <td><img src="./image/직영.PNG"> <img src="./image/홈서비스.PNG"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 25px; font-weight:bold;" width = "900">펠리쉐이드 3.8 가솔린 AWD VIP</td>
+                    <td style="font-size: 25px; font-weight:bold; color:#DA2432">4,530만원</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#888888;">20년11월식&nbsp;&nbsp;&nbsp;&nbsp;18,853km&nbsp;&nbsp;&nbsp;&nbsp;가솔린&nbsp;&nbsp;&nbsp;&nbsp;오토&nbsp;&nbsp;&nbsp;&nbsp;무사고</td>
+                    <td>할부 월 94만원</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#988771">#LED포그램프 #19인치휠 #내비게이션 #후방카메라 #짧은키로수</td>
+                </tr>
+            </table>
+            <table id="c_menu4" width = "1260" style="text-align: left;">
+                <tr>
+                    <td rowspan=6 width = "220"> <img src="./image/k3.PNG"> </td>
+                    <td><img src="./image/1인소유.PNG"></td>
+                    <td><img src="./image/직영.PNG"> <img src="./image/홈서비스.PNG"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 25px; font-weight:bold;" width = "900">k3 1.6 디젤 프레스티지</td>
+                    <td style="font-size: 25px; font-weight:bold; color:#DA2432">1,495만원</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#888888;">17년7월식&nbsp;&nbsp;&nbsp;&nbsp;62,523km&nbsp;&nbsp;&nbsp;&nbsp;디젤&nbsp;&nbsp;&nbsp;&nbsp;오토&nbsp;&nbsp;&nbsp;&nbsp;단순교환</td>
+                    <td>할부 월 31만원</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#988771">사회 초년생의 적당한 첫차!!</td>
+                </tr>
+            </table>
+            <table id="c_menu5" width = "1260" style="text-align: left;">
+                <tr>
+                    <td rowspan=6 width = "220"> <img src="./image/gv80.PNG"> </td>
+                    <td><img src="./image/특옵션.PNG"> <img src="./image/짧은km.PNG"></td>
+                    <td><img src="./image/직영.PNG"> <img src="./image/홈서비스.PNG"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 25px; font-weight:bold;" width = "900">gv80 3.0 디젤 AWD</td>
+                    <td style="font-size: 25px; font-weight:bold; color:#DA2432">6,572만원</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#888888;">21년2월식&nbsp;&nbsp;&nbsp;&nbsp;8,976km&nbsp;&nbsp;&nbsp;&nbsp;디젤&nbsp;&nbsp;&nbsp;&nbsp;오토&nbsp;&nbsp;&nbsp;&nbsp;무사고</td>
+                    <td>할부 월 137만원</td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px; color:#988771">#국보급 주행거리!! #내비게이션 매립!! #디젤 SUV!!</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <hr style="width: 70%;">
+    <br>
+    <!--메뉴 번호-->
+    <section class="menu_num" align="center">
+        <div class="m_num">
+            <button id = "previous_btn" type="submit">이전</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">3</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">4</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">5</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">6</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">7</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">8</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">9</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">10</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id = "previous_btn" type="next_btn">다음</button>
+        </div>
+    </section>    
+    <br>
+    <!--풋터-->
+    <footer style="text-align: center;">
+        <hr>
+        <nav class="foot">
+            <div class="foot_cen">
+                <div class="foot_menu">
+                    <ul class="foot_list">
+                        <li class="foot_list_item"><a href="#">회사소개</a></li>
+                        <li class="foot_list_item"><a href="#">IR정보</a></li>
+                        <li class="foot_list_item"><a href="#">보증서비스</a></li>
+                        <li class="foot_list_item"><a href="#">인재채용</a></li>
+                        <li class="foot_list_item"><a href="#">이용약관</a></li>
+                        <li class="foot_list_item"><a href="#">개인정보처리방침</a></li>
+                        <li class="foot_list_item"><a href="#">고객지원</a></li>
+                        <li class="foot_list_item"><a href="#">윤리강령</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr><br>
+            <div class="footer_text">
+                상호명: 올바른중고차 주식회사<br>
+                대표자: 김대용 | 개인정보관리책임자: 관리장<br>
+                사업자등록번호: 156-87-00729 | 통신판매업신고: 제 2021-서울강남-0562호 | 사업장 소재지: 서울특별시 강남구<br>
+                내차사기 홈서비스: 1588-5577(1) | 일반문의: 1588-5577(4) | 사업제휴문의: kdy8252@naver.com<br>
+                Copyright © 올바른중고차 주식회사 All Rights Reserved<br>
+                &nbsp;
+            </div>
+    </footer>
+
+</body>
+</html>

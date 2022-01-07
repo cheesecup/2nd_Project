@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>차량정보</title>
+    <link rel="stylesheet" href="./car_info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div style="text-align: center;" id="logo">
+            <a href="main_login.html"><img src="image/로그인 로고(100x100).png" width="120px" height="120px"> </a>
+        </div>
+
+        <nav class="nav_menu">
+            <div class="cen">
+                <div class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list_item"><a href="#">내차팔기</a></li>
+                        <li class="menu_list_item"><a href="search.html" style="text-decoration: underline;">내차사기</a></li>
+                        <li class="menu_list_item"><a href="#">금융</a></li>
+                        <li class="menu_list_item"><a href="#">렌트</a></li>
+                        <li class="menu_list_item"><a href="#">위클리특가</a></li>
+                        <li class="menu_list_item"><a href="board.html">게시판</a></li>
+                          <li class="menu_list_item"><span class="dropdown">내계정
+                            <div class="dropdown-contents">
+                                <a href="main.html">로그아웃</a>
+                                <br>
+                                <a href="MyPage.html">마이페이지</a>
+                            </div>
+                        </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+<!--------------------------------------------------header------------------------------------------------------->
+   <main>
+       <!--<aside>
+           <img src="./image/광고 배너.png" alt="">
+       </aside>-->
+
+       <article>
+
+           <section class="top_info">
+               <div class="ad">
+                <img src="./image/광고 배너.png" alt="">
+               </div>
+               <div class="name">
+                   <h1>볼보 XC60 2세대 T6 인스크립션</h1>
+                   <span style="color: rgb(190, 190, 190);" id="sub_name">무사고 18년3월식 36,698km 가솔린 흰색 오토 직영 강남</span>
+               </div>
+               <div class="price">
+                <span style="color: #dc232d;"> 5,940만원 </span><br>
+                할부시 월 <span style="color: #dc232d;"> 126만원 </span><br><br>
+                <a href="./car_buy.html">홈서비스 바로구매</a> 
+               </div>
+           </section>
+
+           <section class="car_img">
+               <div class="slider">
+                 <input type="radio" name="slide" id="slide01" checked> 
+                 <input type="radio" name="slide" id="slide02"> 
+                 <input type="radio" name="slide" id="slide03"> 
+                 <input type="radio" name="slide" id="slide04"> 
+                 <input type="radio" name="slide" id="slide05"> 
+
+                 <div class="slidewrap">
+                     <ul class="slidelist">
+                         <li>
+                             <a>
+                                 <label for="slide05" class="left"></label>
+                                 <img src="./image/볼보앞.png">
+                                 <label for="slide02" class="right"></label>
+                             </a>
+                         </li>
+                         <li>
+                             <a>
+                                <label for="slide01" class="left"></label>
+                                <img src="./image/볼보옆.png">
+                                <label for="slide03" class="right"></label>
+                             </a>
+                         </li>
+                         <li>
+                            <a>
+                               <label for="slide02" class="left"></label>
+                               <img src="./image/볼보뒤.png">
+                               <label for="slide04" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                               <label for="slide03" class="left"></label>
+                               <img src="./image/볼보내부.png">
+                               <label for="slide05" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                               <label for="slide04" class="left"></label>
+                               <img src="./image/볼보트렁크.png">
+                               <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+
+                        <div class="slide-control">
+                            <div class="control01">
+                                <label for="slide05" class="left"></label>
+                                <label for="slide02" class="right"></label>
+                            </div>
+                            <div class="control02">
+                                <label for="slide01" class="left"></label>
+                                <label for="slide03" class="right"></label>
+                            </div>
+                            <div class="control03">
+                                <label for="slide02" class="left"></label>
+                                <label for="slide04" class="right"></label>
+                            </div>
+                            <div class="control04">
+                                <label for="slide03" class="left"></label>
+                                <label for="slide05" class="right"></label>
+                            </div>
+                            <div class="control05">
+                                <label for="slide04" class="left"></label>
+                                <label for="slide01" class="right"></label>
+                            </div>
+
+                        </div>
+                     </ul>
+                </div>
+
+               </div>
+           </section>
+
+           <section class="car_certi">
+             <div class="all-certi">
+               <div class="a-certi">
+                   <b>올바른 진단</b><br>
+                   174항목 진단 완료 &nbsp; <span style="color: #dc232d;"> 무사고 </span>
+               </div>
+               <div class="b-certi">
+                   <b>보험 이력</b><br>
+                   내차 피해 <span style="color: #dc232d;"> 0회 </span> &nbsp; 상대차 피해 <span style="color: #dc232d;"> 0회 </span>
+               </div>
+               <div class="s-certi">
+                   <b>성능 정검</b><br>
+                   판금 <span style="color: #dc232d;"> 0건 </span> &nbsp; 교환 <span style="color: #dc232d;"> 0건 </span>
+               </div>
+             </div>
+           </section>
+
+           <section class="basic_info">
+               <div class="basic">
+                   <h2>차량 기본정보</h2>
+                   <hr>
+                   <br>
+                   <table id="t-basic">
+                        <!-- 1행 -->
+                        <tr>
+                            <td>
+                                차량번호<br>
+                               <b>12가 1234</b>
+                            </td>
+                            <td>
+                                배기량<br>
+                                <b>1,969cc</b>
+                             </td>
+                             <td>
+                                연식<br>
+                                <b>2018</b>
+                             </td>
+                             <td>
+                                색상<br>
+                                <b>흰색</b>
+                             </td>
+                        </tr>
+                        <!-- 2행 -->
+                        <tr>
+                            <td>
+                               주행거리<br>
+                               <b>36,698</b>
+                            </td>
+                            <td>
+                                변속기<br>
+                                <b>오토</b>
+                             </td>
+                             <td>
+                                연료<br>
+                                <b>가솔린</b>
+                             </td>
+                             <td>
+                                차종<br>
+                                <b>SUV</b>
+                             </td>
+                        </tr>
+                        <!-- 3행 -->
+                        <tr>
+                            <td>
+                               압류/저당<br>
+                               <b>없음</b>
+                            </td>
+                            <td>
+                                구동방식<br>
+                                <b>4륜</b>
+                             </td>
+                             <td>
+                                인승<br>
+                                <b>5</b>
+                             </td>
+                             <td>
+                                제시신고번호<br>
+                                <b>제 212312312345호</b>
+                             </td>
+                        </tr>
+                   </table>
+                   <br>
+                   <hr>
+               </div>
+           </section>
+
+           <section class="major_opt">
+               <div class="major">
+                   <h2>주요 옵션</h2>
+                   <br>
+                   <table id="t-major">
+                       <tr>
+                            <td>
+                                <img src="./icon/전구.png"><br>
+                                HID/LED라이트
+                                </td>
+                            <td>
+                                <img src="./icon/선루프.png"><br>
+                                선루프
+                            </td>
+                            <td>
+                                <img src="./icon/가죽시트.png"><br>
+                                가죽시트
+                            </td>
+                            <td>
+                                <img src="./icon/열선시트.png"><br>
+                                열선시트
+                            </td>
+                            <td>
+                                <img src="./icon/통풍시트.png"><br>
+                                통풍시트
+                            </td>
+                            <td>
+                                <img src="./icon/스마트키.png"><br>
+                                스마트키 <span style="color: #dc232d;"> 1</span>개
+                            </td>
+                       </tr>
+                       <tr>
+                            <td>
+                                <img src="./icon/내비게이션.png"><br>
+                                내비게이션
+                            </td>
+                            <td>
+                                <img src="./icon/후측방경보.png"><br>
+                                후측방 경보시스템
+                            </td>
+                            <td>
+                                <img src="./icon/차선이탈경보.png"><br>
+                                LDWS:차선이탈경보시스템
+                            </td>
+                            <td>
+                                <img src="./icon/어댑티브헤드.png"><br>
+                                어댑티브 헤드램프
+                            </td>
+                            <td>
+                                <img src="./icon/스마트크루즈.png"><br>
+                                스마트 크루즈컨트롤
+                            </td>
+                            <td>
+                                <img src="./icon/핸들열선.png"><br>
+                                핸들열선
+                            </td>
+                       </tr>
+                       <tr>
+                            <td>
+                                <img src="./icon/헤드업.png"><br>
+                                헤드업 디스플레이
+                            </td>
+                       </tr>
+                   </table>
+               </div>
+           </section>
+
+           <section class="all_opt">
+               <div class="all">
+                   <h2>전체 옵션</h2>
+                   <hr>
+                   <br>
+                   <div class="all-content">
+                       <h3>외관</h3><br>
+                       <table id="t-all">
+                           <tr>
+                               <td>HID/LED라이트</td>
+                               <td>어댑티브 헤드램프</td>
+                               <td>전동접이사이드미러</td>
+                               <td>선루프</td>
+                           </tr>
+                           <tr>
+                               <td>루프랙</td>
+                               <td>알루미늄 휠</td>
+                           </tr> 
+                       </table>
+                   </div>
+                   <br>
+                   <hr>
+                   <br>
+                   <div class="all-content">
+                       <h3>내장</h3><br>
+                       <table id="t-all">
+                           <tr>
+                               <td>스티어링 휠 리모컨</td>
+                               <td>룸미러:ECM</td>
+                               <td>가죽시트</td>
+                               <td>전동시트:운전석</td>
+                           </tr>
+                           <tr>
+                               <td>전동시트:조수석</td>
+                               <td>열선시트:운전석</td>
+                               <td>열선시트:조수석</td>
+                               <td>열선시트:뒷자석</td>
+                           </tr>
+                           <tr>
+                               <td>메모리시트:운전석</td>
+                               <td>메모리시트:조수석</td>
+                               <td>통풍시트:운전석</td>
+                               <td>통풍시트:조수석</td>
+                           </tr>
+                       </table>  
+                   </div>
+                   <br>
+                   <hr>
+                   <br>
+                   <div class="all-content">
+                       <h3>안전</h3><br>
+                       <table id="t-all">
+                           <tr>
+                                <td>에어백:운전석</td>
+                                <td>에어백:조수석</td>
+                                <td>에어백:사이드</td>
+                                <td>에어백:커튼</td>
+                           </tr>
+                           <tr>
+                                <td>감지센서:전방</td>
+                                <td>감지센서:후방</td>
+                                <td>카메라:전방</td>
+                                <td>후측방 경보시스템</td>
+                           </tr>
+                           <tr>
+                                <td>카메라:후방</td>
+                                <td>360도 어라운드 뷰</td>
+                                <td>ABS</td>
+                                <td>차체자세 제어장치</td>
+                           </tr>
+                           <tr>
+                                <td>TPMS:타이어공기압감지</td>
+                                <td>전자식파킹브레이크</td>
+                                <td>LDWS:차선이탈경보시스템</td>
+                                <td>자동긴급제동</td>
+                           </tr>
+                           <tr>
+                                <td>경사로밀림방지장치(HAC)</td>
+                           </tr> 
+                       </table>
+                   </div>
+                   <br>
+                   <hr>
+                   <br>
+                   <div class="all-content">
+                       <h3>편의</h3><br>
+                       <table id="t-all">
+                            <tr>
+                                <td>오토 에어컨</td>
+                                <td>스마트키1개</td>
+                                <td>파워 트렁크</td>
+                                <td>스마트 크루즈컨트롤</td>
+                            </tr>
+                            <tr>
+                                <td>내비게이션</td>
+                                <td>USB 단자</td>
+                                <td>블루투스</td>
+                                <td>핸들 열선</td>
+                            </tr>
+                            <tr>
+                                <td>주차조향보조시스템</td>
+                                <td>오토 라이트</td>
+                                <td>스탑앤고(ISG)</td>
+                                <td>차량 메뉴얼</td>
+                            </tr>
+                            <tr>
+                                <td>헤드업 디스플레이(UBD)</td>
+                            </tr>
+                       </table>
+                   </div>
+                   <br>
+                   <hr>
+                   <br>
+               </div>
+           </section>
+
+           <section class="car_intro">
+               <div class="intro">
+                   <h2>차량 소개</h2>
+                   <div class="intro-content">
+                   <p>
+                    <br>
+                    Key Point <br>
+                    - 이번에 소개해드릴 차량은 최고의 안전성과 우수한 주행성능을 가지고 있는 볼보 XC60 T6 인스크립션 모델 차량입니다.<br>
+                    - 볼보 서비스센터 신차보증 잔존 ( 5년 or 10만키로)<br>
+                    - 강남지점 진단평가사 적극 추천드리는 차량입니다.<br>
+                    - 집이 멀다면? "내차사기 홈서비스", 수리비가 걱정된다면? "올바른중고차 보증 연장 (AW)" 적극 추천드립니다.<br>
+                    <br>
+                    이 차의 History<br>
+                    - 전 차주분께서 신차 구입후 정기적으로 관리 및 운행하신 차량입니다.<br>
+                    - 신차 구입으로 올바른중고차 강남지점 직접 매각하신 차량이라 이력은 확실합니다.<br>
+                    <br>
+                    진단소견<br>
+                    - 1인소유 차량에 단순교환도 없는 '무사고' 차량이며, 보험이력 0건!! 입니다.<br>
+                    - 전 차주분께서 정기적으로 관리 및 운행하신 차량답게 차량컨디션 훌륭합니다.<br>
+                    - 타이어 앞 5.1mm (약 2.5만키로 주행가능), 뒤 6.7mm (약 3.5만키로 주행가능) 차량입니다.<br>
+                    - 리프트에 올려 하부 진단결과 부식 및 누유없이 깔끔합니다.<br>
+                    - 주행테스트 결과 실내/실외 소음 및 떨림 증상없이 우수한 주행성능을 보여준 차량입니다.<br>
+                    - 실내컨디션 및 실내냄새 양호합니다.<br>
+                    - 선호도가 좋은 흰색 차량입니다. 직접 보시면 더욱 맘에드실 차량입니다.<br>
+                    <br>
+                   </p>
+                </div>
+               </div>    
+           </section>
+
+       </article>
+
+   </main>
+<!--------------------------------------------------footer------------------------------------------------------->
+    <footer style="text-align: center;">
+        <hr>
+        <nav class="foot">
+            <div class="foot_cen">
+                <div class="foot_menu">
+                    <ul class="foot_list">
+                        <li class="foot_list_item"><a href="#">회사소개</a></li>
+                        <li class="foot_list_item"><a href="#">IR정보</a></li>
+                        <li class="foot_list_item"><a href="#">보증서비스</a></li>
+                        <li class="foot_list_item"><a href="#">인재채용</a></li>
+                        <li class="foot_list_item"><a href="#">이용약관</a></li>
+                        <li class="foot_list_item"><a href="#">개인정보처리방침</a></li>
+                        <li class="foot_list_item"><a href="#">고객지원</a></li>
+                        <li class="foot_list_item"><a href="#">윤리강령</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr><br>
+        <div style="text-align: center;">
+            <div class="footer_text">
+                상호명: 올바른중고차 주식회사<br>
+                대표자: 김대용 | 개인정보관리책임자: 관리장<br>
+                사업자등록번호: 156-87-00729 | 통신판매업신고: 제 2021-서울강남-0562호 | 사업장 소재지: 서울특별시 강남구<br>
+                내차사기 홈서비스: 1588-5577(1) | 일반문의: 1588-5577(4) | 사업제휴문의: kdy8252@naver.com<br>
+                Copyright © 올바른중고차 주식회사 All Rights Reserved<br>
+                &nbsp;
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

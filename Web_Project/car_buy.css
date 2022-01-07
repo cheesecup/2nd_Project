@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.nav_menu {
+    background-color: #dc232d;
+    
+}
+
+.cen {
+    text-align: center;
+    margin-right: 5%;
+    
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: max-content;  
+}
+
+.menu_list_item {
+    float: left;
+    width: max-content;
+}
+
+.menu_list_item > a, .menu_list_item > span {
+    display: block;
+    color: white;
+    padding: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: #dc232d;
+    min-width: 130px;
+    padding: 8px;
+    text-align: left;
+    /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+    /* border: 3px solid black; */
+    border-radius: 5px;
+}
+
+.dropdown-contents > a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dropdown:hover .dropdown-contents {
+    display: block;
+}
+
+footer {
+    color: #6e6969dc;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.foot_cen {
+    text-align: center;
+}
+
+.foot_menu {
+    display: inline-block;
+}
+
+.foot_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: max-content;  
+}
+
+.foot_list_item {
+    float: left;
+}
+
+.foot_list_item a{
+    display: block;
+    color: #6e6969dc;
+    margin-left: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer_text {
+    display: inline-block;
+    width: max-content;
+}
+
+/* ------------------------------header & footer------------------------------------ */
+
+p {
+    padding: 20px;
+    padding-left: 0;
+}
+
+input {
+    border: 1px solid #c5bebedc;
+}
+
+label {
+    font-weight: 100 bolder;
+}
+
+.nomi-con1  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nomi-con1-1{
+    width: 1000px;
+    margin-top: 50px;
+}
+h1 {
+    font-size: 22pt;
+    padding: 15px;
+    padding-left: 0;
+}
+#agree-c {
+    background-color: rgb(250, 225, 225);
+    text-align: center;
+    word-spacing: 5px;
+    font-size: 15pt;
+}
+#agree {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.nomi-con2 {
+    display: flex;
+    justify-content: center;
+}
+.nomi-con2-1 {
+    width: 1000px;
+    margin-top: 30px;
+    display: flex;
+}
+.nomi-con2-1 input {
+    width: 400px;
+    height: 45px;
+}
+#self-btn {
+    width: 120px;
+    height: 50px;
+    font-size: 13pt;
+    color: white;
+    background-color: #5e5e5e;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 22px;
+}
+#self-btn:hover {
+    color: white;
+    background-color: rgb(231, 33, 33);
+}
+
+.nomi-ex {
+    display: flex;
+    justify-content: center;
+}
+#n-ex {
+    width: 1000px;
+    padding: 0;
+    font-weight:300;
+}
+/*-----------------hr----------------*/
+
+.nominee-content2 {
+    display: flex;
+    justify-content: center;
+}
+.nomi-con3 {
+    width: 1000px;
+}
+
+#jb_num1 {
+    width: 300px;
+    height: 45px;
+}
+#jb_num2 {
+    width: 300px;
+    height: 45px;
+}
+
+#address1 {
+    width: 300px;
+    height: 45px;
+}
+#address2 {
+    width: 600px;
+    height: 45px;
+}
+#address3 {
+    width: 600px;
+    height: 45px;
+}
+#address-btn1 {
+    width: 120px;
+    height: 50px;
+    font-size: 12pt;
+    color: white;
+    background-color: #5e5e5e;
+    border: 0;
+    border-radius: 5px;
+}
+#address-btn1:hover{
+    color: white;
+    background-color: rgb(231, 33, 33);
+}
+
+#add1-ex {
+    padding: 0;
+    font-weight: 300;
+}
+
+#email1 {
+    width: 300px;
+    height: 45px;
+}
+#email2 {
+    width: 300px;
+    height: 45px;
+}
+
+/* -------------------------nominee end----------------------------- */
+
+h2 {
+    font-size: 20pt;
+    padding-top: 20px;
+}
+
+.delivery {
+    display: flex;
+    justify-content: center;
+}
+
+.delivery-content {
+    width: 1000px;
+}
+
+#same-btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #b8afaf; 
+    font-size: 12pt;
+}
+#diff-btn {
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    color: #b8afaf;
+    font-size: 12pt;
+}
+#same-btn:hover {
+    color: white;
+    background-color: rgb(184, 178, 178);
+}
+#diff-btn:hover {
+    color: white;
+    background-color: rgb(184, 178, 178);
+}
+
+#name_d {
+    width: 300px;
+    height: 45px;
+}
+
+#mobile_d {
+    width: 400px;
+    height: 45px;
+}
+
+#address4 {
+    width: 300px;
+    height: 45px;
+}
+#address5 {
+    width: 600px;
+    height: 45px;
+}
+#address6 {
+    width: 600px;
+    height: 45px;
+}
+#address-btn2 {
+    width: 120px;
+    height: 50px;
+    font-size: 12pt;
+    color: white;
+    background-color: #5e5e5e;
+    border: 0;
+    border-radius: 5px;
+}
+#address-btn2:hover {
+    color: white;
+    background-color: rgb(231, 33, 33);
+}
+
+#add2-ex {
+    padding: 0;
+    font-weight: 300;
+}
+
+#hope-date {
+    width: 300px;
+    height: 45px;
+}
+#hope-ex {
+    padding: 0;
+    font-weight: 300;
+}
+
+/* -------------------------delivery end----------------------------- */
+
+.pay {
+    display: flex;
+    justify-content: center;
+}
+
+.pay-content {
+    width: 1000px;
+    padding-bottom: 200px;
+}
+
+#cash-btn {
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 25px;
+    font-size: 13pt;
+    color: #b8afaf; ; 
+}
+#month-btn {
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 25px;
+    font-size: 13pt;
+    color: #b8afaf; ; 
+}
+#card-btn {
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 13pt;
+    color: #b8afaf; ; 
+}
+#cash-btn:hover {
+    color: white; /* #2b2a2a */ 
+    background-color: rgb(184, 178, 178);
+}
+#month-btn:hover {
+    color: white;
+    background-color: rgb(184, 178, 178);
+}
+#card-btn:hover {
+    color: white;
+    background-color: rgb(184, 178, 178);
+}
+
+#pay-ex {
+    font-weight: 300;
+    padding: 0;
+}
+
+#yes1 {
+    margin-left: 100px;
+}
+#yes2{
+    margin-left: 132px;
+}
+
+#direct_pay {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: #dc232d;
+    font-size: 15pt;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    
+}
+#direct_pay:hover {
+    color: white;
+    background-color: #fd000d;
+
+}
+#talk_pay {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    color: white;
+    background-color: #dc232d;
+    font-size: 15pt;
+}
+#talk_pay:hover {
+    color: white;
+    background-color: #fd000d;
+}
+
+input::placeholder {
+    color: rgb(184, 178, 178);
+}
